@@ -25,7 +25,7 @@ _padUrler = function(pader, attr, invalid) {
       // 此处为修改gulp-prefix的代码的地方
       // var file_prefix = (typeof prefix === 'function') ? prefix(uri) : prefix;
       // node.setAttribute(attr, urljoin(file_prefix, uri.path));
-      if (typeof pad === 'function') {
+      if (typeof pader === 'function') {
         node.setAttribute(attr, urljoin(pader(uri)));
       } else {
         node.setAttribute(attr, urljoin(pader, uri.path));

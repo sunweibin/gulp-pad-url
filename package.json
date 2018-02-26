@@ -1,6 +1,6 @@
 {
   "name": "gulp-pad-url",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "针对html页面中的静态资源路径进行额外的补充，例如：添加cdn前缀，时间戳",
   "main": "index.js",
   "repository": {
