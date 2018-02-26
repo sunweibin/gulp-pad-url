@@ -1,0 +1,19 @@
+{
+  "name": "gulp-pad-url",
+  "version": "1.0.0",
+  "description": "针对html页面中的静态资源路径进行额外的补充，例如：添加cdn前缀，时间戳",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunweibin/gulp-pad-url.git"
+  },
+  "keywords": [
+    "gulp", "url", "prefix"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunweibin/gulp-pad-url/issues"
+  },
+  "homepage": "https://github.com/sunweibin/gulp-pad-url#readme"
+}
