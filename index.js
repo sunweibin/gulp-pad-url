@@ -6,7 +6,7 @@ var through = require('through2'),
     concat  = require("concat-stream"),
     _padUrler;
 
-_padUrler = function(pad, attr, invalid) {
+_padUrler = function(pader, attr, invalid) {
   return function(node) {
     node.getAttribute(attr, function(uri) {
 
@@ -26,9 +26,9 @@ _padUrler = function(pad, attr, invalid) {
       // var file_prefix = (typeof prefix === 'function') ? prefix(uri) : prefix;
       // node.setAttribute(attr, urljoin(file_prefix, uri.path));
       if (typeof pad === 'function') {
-        node.setAttribute(attr, urljoin(prefix(uri)));
+        node.setAttribute(attr, urljoin(pader(uri)));
       } else {
-        node.setAttribute(attr, urljoin(pad, uri.path));
+        node.setAttribute(attr, urljoin(pader, uri.path));
       }
     });
   };
