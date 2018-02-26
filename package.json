@@ -10,6 +10,13 @@
   "keywords": [
     "gulp", "url", "prefix"
   ],
+  "dependencies": {
+    "through2": "~1.0.0",
+    "url": "~0.10.1",
+    "trumpet": "~1.7.0",
+    "concat-stream": "~1.4.5",
+    "url-join": "0.0.1"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
